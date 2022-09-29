@@ -1,0 +1,46 @@
+@font-face {
+	font-family: ubuntu;
+	src: url(Ubuntu-Regular.ttf);
+}
+@font-face {
+	font-family: bebas;
+	src: url(BebasNeue-Regular.ttf);
+}
+body {
+	font-family: ubuntu;
+	margin: 0;
+}
+h1 {
+	font-family: bebas;
+}
+section {
+	display: flex;
+	justify-content: space-between;
+}
+.description {
+	text-align: left;
+}
+.content {
+	padding: 20px 10px;
+}
+.sidebar {
+	width: 30%;
+	padding: 20px 10px;
+}
+.footer {
+	padding: 20px 10px 50px 10px;
+}
+.hero {
+	min-height: 400px;
+	background-image: url('/img/anime img.jpg');
+	background-position: center;
+	background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/anime img.jpg');
+	color: honey;
+	display: grid;
+	place-items: center;
+}
+.hero h1 {
+	margin: 0;
+	font-size: 62px;
+}
