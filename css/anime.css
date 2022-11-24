@@ -32,10 +32,10 @@ section {
 }
 .hero {
 	min-height: 400px;
-	background-image: url('/img/anime img.jpg');
+	background-image: url('/img/animeimg.jpg');
 	background-position: center;
 	background-size: cover;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/anime img.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/animeimg.jpg');
 	color: honey;
 	display: grid;
 	place-items: center;
