@@ -11,13 +11,53 @@ layout: layouts/base.njk
 			<li>
 				<a href="{{LinkMono}}">monoschinos</a>
 			</li>
+			{% if LinkMono2 %}
+			<li>
+				<a href="{{LinkMono2}}">monoschinos</a>
+			</li>
+			{% endif %}
+			{% if LinkMono3 %}
+			<li>
+				<a href="{{LinkMono3}}">monoschinos</a>
+			</li>
+			{% endif %}
+			{% if LinkMono4 %}
+			<li>
+				<a href="{{LinkMono4}}">monoschinos</a>
+			</li>
+			{% endif %}
 			<li>
 				<a href="{{LinkJK}}">jkanime</a>
 			</li>
+				{% if LinkJk2 %}
+					<li>
+						<a href="{{LinkJK2}}">jkanime</a>
+					</li>
+				{% endif %}
+				{% if LinkJk3 %}
+					<li>
+						<a href="{{LinkJK3}}">jkanime</a>
+					</li>
+				{% endif %}
+				{% if LinkJk4 %}
+					<li>
+						<a href="{{LinkJK4}}">jkanime</a>
+					</li>
+				{% endif %}
+				{% if LinkJk5 %}
+					<li>
+						<a href="{{LinkJK5}}">jkanime</a>
+					</li>
+				{% endif %}
 		</ul>
 	</div>
 	<div class="grid">
-		
+		<article>
+			<a href="{{linkList}}">
+				<img src="{{imagenList}}">
+				<h6>cap list download</h6>
+			</a>
+		</article>
 	</div>
 </div>
 <section class="footer">
