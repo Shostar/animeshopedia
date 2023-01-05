@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+<div class='hero' style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ imagenFondo }});">
+	<h1>{{ titulo }}</h1>
+</div>
+<div>{{ content }}</div>
+<ul>
+  {% for episodio in episodios %}
+    <a href="{{ episodio.link }}">
+      <li>{{ episodio.titulo }}</li>
+    </a>
+  {% else %}
+    <li>No hay episodios para mostrar</li>
+  {% endfor %}
+</ul>
+<section class="footer">
+	<a href="/{{ returnLink }}">Regresar</a>
+</section>
