@@ -8,47 +8,22 @@ layout: layouts/base.njk
 	<div class="description">
 		<p>{{ descripcion }}</p>
 		<ul>
-			<li>
-				<a href="{{LinkMono}}">monoschinos</a>
-			</li>
-			{% if LinkMono2 %}
-			<li>
-				<a href="{{LinkMono2}}">monoschinos</a>
-			</li>
-			{% endif %}
-			{% if LinkMono3 %}
-			<li>
-				<a href="{{LinkMono3}}">monoschinos</a>
-			</li>
-			{% endif %}
-			{% if LinkMono4 %}
-			<li>
-				<a href="{{LinkMono4}}">monoschinos</a>
-			</li>
-			{% endif %}
-			<li>
-				<a href="{{LinkJK}}">jkanime</a>
-			</li>
-				{% if LinkJk2 %}
-					<li>
-						<a href="{{LinkJK2}}">jkanime</a>
-					</li>
+			{%- for linkMono in monoLinks %}
+				{% if linkMono %}
+				<li>
+					<a href="{{linkMono}}">monoschinos</a>
+				</li>
 				{% endif %}
-				{% if LinkJk3 %}
-					<li>
-						<a href="{{LinkJK3}}">jkanime</a>
-					</li>
+			{%- endfor %}
+		</ul>
+		<ul>
+			{%- for linkJk in jkLinks %}
+				{% if linkJk %}
+				<li>
+					<a href="{{linkJk}}">jkanime</a>
+				</li>
 				{% endif %}
-				{% if LinkJk4 %}
-					<li>
-						<a href="{{LinkJK4}}">jkanime</a>
-					</li>
-				{% endif %}
-				{% if LinkJk5 %}
-					<li>
-						<a href="{{LinkJK5}}">jkanime</a>
-					</li>
-				{% endif %}
+			{%- endfor %}
 		</ul>
 	</div>
 	<div class="grid">
